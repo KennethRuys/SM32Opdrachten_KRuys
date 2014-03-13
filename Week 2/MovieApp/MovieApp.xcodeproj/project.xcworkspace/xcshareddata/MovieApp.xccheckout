@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3C132AC4-9AAF-40E6-87DD-254092CA7BA8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MovieApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8EE78D33-B466-400B-BF20-DAE4BB4DE6BF</key>
+		<string>https://github.com/KennethRuys/SM32Opdrachten_KRuys.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Week 2/MovieApp/MovieApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8EE78D33-B466-400B-BF20-DAE4BB4DE6BF</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/KennethRuys/SM32Opdrachten_KRuys.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8EE78D33-B466-400B-BF20-DAE4BB4DE6BF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8EE78D33-B466-400B-BF20-DAE4BB4DE6BF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SM32Opdrachten_KRuys</string>
+		</dict>
+	</array>
+</dict>
+</plist>
