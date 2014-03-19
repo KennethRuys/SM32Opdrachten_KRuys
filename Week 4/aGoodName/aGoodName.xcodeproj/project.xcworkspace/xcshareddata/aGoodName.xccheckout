@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>87D83DF9-4EDB-4FD5-9BF5-5DFB3F3B8421</string>
+	<key>IDESourceControlProjectName</key>
+	<string>aGoodName</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ACF1E6D8-8CD4-4B8A-BAD6-5C9C99A3C251</key>
+		<string>https://github.com/KennethRuys/SM32Opdrachten_KRuys.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Week 3/Week 4/aGoodName/aGoodName.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ACF1E6D8-8CD4-4B8A-BAD6-5C9C99A3C251</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/KennethRuys/SM32Opdrachten_KRuys.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACF1E6D8-8CD4-4B8A-BAD6-5C9C99A3C251</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ACF1E6D8-8CD4-4B8A-BAD6-5C9C99A3C251</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SM32Opdrachten_KRuys</string>
+		</dict>
+	</array>
+</dict>
+</plist>
