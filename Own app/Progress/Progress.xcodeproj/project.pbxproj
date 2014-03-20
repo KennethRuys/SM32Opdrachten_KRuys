@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F589F94218DA579700DAEA89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F589F94118DA579700DAEA89 /* Foundation.framework */; };
+		F589F94418DA579700DAEA89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F589F94318DA579700DAEA89 /* CoreGraphics.framework */; };
+		F589F94618DA579700DAEA89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F589F94518DA579700DAEA89 /* UIKit.framework */; };
+		F589F94C18DA579700DAEA89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F589F94A18DA579700DAEA89 /* InfoPlist.strings */; };
+		F589F94E18DA579700DAEA89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F94D18DA579700DAEA89 /* main.m */; };
+		F589F95218DA579700DAEA89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F95118DA579700DAEA89 /* AppDelegate.m */; };
+		F589F95518DA579700DAEA89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F589F95318DA579700DAEA89 /* Main.storyboard */; };
+		F589F95D18DA579700DAEA89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F589F95C18DA579700DAEA89 /* Images.xcassets */; };
+		F589F96418DA579800DAEA89 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F589F96318DA579800DAEA89 /* XCTest.framework */; };
+		F589F96518DA579800DAEA89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F589F94118DA579700DAEA89 /* Foundation.framework */; };
+		F589F96618DA579800DAEA89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F589F94518DA579700DAEA89 /* UIKit.framework */; };
+		F589F96E18DA579800DAEA89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F589F96C18DA579800DAEA89 /* InfoPlist.strings */; };
+		F589F97018DA579800DAEA89 /* ProgressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F96F18DA579800DAEA89 /* ProgressTests.m */; };
+		F589F97C18DA5EC400DAEA89 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F97A18DA5EC400DAEA89 /* Default.png */; };
+		F589F97D18DA5EC400DAEA89 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F97B18DA5EC400DAEA89 /* Default@2x.png */; };
+		F589F97F18DA600200DAEA89 /* Default@R4.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F97E18DA600200DAEA89 /* Default@R4.png */; };
+		F589F98718DA60D700DAEA89 /* Background@R4.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F98618DA60D700DAEA89 /* Background@R4.png */; };
+		F589F9CE18DA642300DAEA89 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C018DA642300DAEA89 /* AppIcon29x29.png */; };
+		F589F9CF18DA642300DAEA89 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C118DA642300DAEA89 /* AppIcon29x29@2x.png */; };
+		F589F9D018DA642300DAEA89 /* AppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C218DA642300DAEA89 /* AppIcon40x40.png */; };
+		F589F9D118DA642300DAEA89 /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C318DA642300DAEA89 /* AppIcon40x40@2x.png */; };
+		F589F9D218DA642300DAEA89 /* AppIcon50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C418DA642300DAEA89 /* AppIcon50x50.png */; };
+		F589F9D318DA642300DAEA89 /* AppIcon50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C518DA642300DAEA89 /* AppIcon50x50@2x.png */; };
+		F589F9D418DA642300DAEA89 /* AppIcon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C618DA642300DAEA89 /* AppIcon57x57.png */; };
+		F589F9D518DA642300DAEA89 /* AppIcon57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C718DA642300DAEA89 /* AppIcon57x57@2x.png */; };
+		F589F9D618DA642300DAEA89 /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C818DA642300DAEA89 /* AppIcon60x60.png */; };
+		F589F9D718DA642300DAEA89 /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C918DA642300DAEA89 /* AppIcon60x60@2x.png */; };
+		F589F9D818DA642300DAEA89 /* AppIcon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9CA18DA642300DAEA89 /* AppIcon72x72.png */; };
+		F589F9D918DA642300DAEA89 /* AppIcon72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9CB18DA642300DAEA89 /* AppIcon72x72@2x.png */; };
+		F589F9DA18DA642300DAEA89 /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9CC18DA642300DAEA89 /* AppIcon76x76.png */; };
+		F589F9DB18DA642300DAEA89 /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9CD18DA642300DAEA89 /* AppIcon76x76@2x.png */; };
+		F589F9DC18DA662000DAEA89 /* startViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F98918DA617200DAEA89 /* startViewController.m */; };
+		F589F9DF18DA6ED600DAEA89 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9DE18DA6ED600DAEA89 /* NavigationViewController.m */; };
+		F589F9E218DA6EFE00DAEA89 /* WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9E118DA6EFE00DAEA89 /* WorkoutViewController.m */; };
+		F589F9E518DA6F3C00DAEA89 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9E418DA6F3C00DAEA89 /* PictureViewController.m */; };
+		F589F9E818DA6F4E00DAEA89 /* CalenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9E718DA6F4E00DAEA89 /* CalenderViewController.m */; };
+		F589F9EB18DADCF600DAEA89 /* WorkoutListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9EA18DADCF600DAEA89 /* WorkoutListTableViewController.m */; };
+		F589F9EE18DADD1A00DAEA89 /* DetailedWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9ED18DADD1A00DAEA89 /* DetailedWorkoutViewController.m */; };
+		F589F9F118DADDA800DAEA89 /* CurrentExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9F018DADDA800DAEA89 /* CurrentExerciseViewController.m */; };
+		F589F9F418DADE6600DAEA89 /* EditWorkoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9F318DADE6600DAEA89 /* EditWorkoutTableViewController.m */; };
+		F5BDA13618DADFBE000C979C /* EditExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDA13518DADFBE000C979C /* EditExerciseViewController.m */; };
+		F5BDA13918DADFCA000C979C /* AddExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDA13818DADFCA000C979C /* AddExerciseViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F589F96718DA579800DAEA89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F589F93618DA579700DAEA89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F589F93D18DA579700DAEA89;
+			remoteInfo = Progress;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F589F93E18DA579700DAEA89 /* Progress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Progress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F589F94118DA579700DAEA89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F589F94318DA579700DAEA89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F589F94518DA579700DAEA89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F589F94918DA579700DAEA89 /* Progress-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Progress-Info.plist"; sourceTree = "<group>"; };
+		F589F94B18DA579700DAEA89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F589F94D18DA579700DAEA89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F589F94F18DA579700DAEA89 /* Progress-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Progress-Prefix.pch"; sourceTree = "<group>"; };
+		F589F95018DA579700DAEA89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F589F95118DA579700DAEA89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F589F95418DA579700DAEA89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F589F95C18DA579700DAEA89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F589F96218DA579800DAEA89 /* ProgressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F589F96318DA579800DAEA89 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F589F96B18DA579800DAEA89 /* ProgressTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProgressTests-Info.plist"; sourceTree = "<group>"; };
+		F589F96D18DA579800DAEA89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F589F96F18DA579800DAEA89 /* ProgressTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressTests.m; sourceTree = "<group>"; };
+		F589F97A18DA5EC400DAEA89 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F589F97B18DA5EC400DAEA89 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F589F97E18DA600200DAEA89 /* Default@R4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@R4.png"; sourceTree = "<group>"; };
+		F589F98618DA60D700DAEA89 /* Background@R4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@R4.png"; sourceTree = "<group>"; };
+		F589F98818DA617200DAEA89 /* startViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = startViewController.h; sourceTree = "<group>"; };
+		F589F98918DA617200DAEA89 /* startViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startViewController.m; sourceTree = "<group>"; };
+		F589F9C018DA642300DAEA89 /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
+		F589F9C118DA642300DAEA89 /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
+		F589F9C218DA642300DAEA89 /* AppIcon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon40x40.png; sourceTree = "<group>"; };
+		F589F9C318DA642300DAEA89 /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@2x.png"; sourceTree = "<group>"; };
+		F589F9C418DA642300DAEA89 /* AppIcon50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon50x50.png; sourceTree = "<group>"; };
+		F589F9C518DA642300DAEA89 /* AppIcon50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon50x50@2x.png"; sourceTree = "<group>"; };
+		F589F9C618DA642300DAEA89 /* AppIcon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon57x57.png; sourceTree = "<group>"; };
+		F589F9C718DA642300DAEA89 /* AppIcon57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon57x57@2x.png"; sourceTree = "<group>"; };
+		F589F9C818DA642300DAEA89 /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon60x60.png; sourceTree = "<group>"; };
+		F589F9C918DA642300DAEA89 /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		F589F9CA18DA642300DAEA89 /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon72x72.png; sourceTree = "<group>"; };
+		F589F9CB18DA642300DAEA89 /* AppIcon72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon72x72@2x.png"; sourceTree = "<group>"; };
+		F589F9CC18DA642300DAEA89 /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon76x76.png; sourceTree = "<group>"; };
+		F589F9CD18DA642300DAEA89 /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76@2x.png"; sourceTree = "<group>"; };
+		F589F9DD18DA6ED600DAEA89 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		F589F9DE18DA6ED600DAEA89 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		F589F9E018DA6EFE00DAEA89 /* WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutViewController.h; sourceTree = "<group>"; };
+		F589F9E118DA6EFE00DAEA89 /* WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutViewController.m; sourceTree = "<group>"; };
+		F589F9E318DA6F3C00DAEA89 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		F589F9E418DA6F3C00DAEA89 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
+		F589F9E618DA6F4E00DAEA89 /* CalenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderViewController.h; sourceTree = "<group>"; };
+		F589F9E718DA6F4E00DAEA89 /* CalenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderViewController.m; sourceTree = "<group>"; };
+		F589F9E918DADCF600DAEA89 /* WorkoutListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutListTableViewController.h; sourceTree = "<group>"; };
+		F589F9EA18DADCF600DAEA89 /* WorkoutListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutListTableViewController.m; sourceTree = "<group>"; };
+		F589F9EC18DADD1A00DAEA89 /* DetailedWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedWorkoutViewController.h; sourceTree = "<group>"; };
+		F589F9ED18DADD1A00DAEA89 /* DetailedWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedWorkoutViewController.m; sourceTree = "<group>"; };
+		F589F9EF18DADDA800DAEA89 /* CurrentExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentExerciseViewController.h; sourceTree = "<group>"; };
+		F589F9F018DADDA800DAEA89 /* CurrentExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentExerciseViewController.m; sourceTree = "<group>"; };
+		F589F9F218DADE6600DAEA89 /* EditWorkoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditWorkoutTableViewController.h; sourceTree = "<group>"; };
+		F589F9F318DADE6600DAEA89 /* EditWorkoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditWorkoutTableViewController.m; sourceTree = "<group>"; };
+		F5BDA13418DADFBE000C979C /* EditExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditExerciseViewController.h; sourceTree = "<group>"; };
+		F5BDA13518DADFBE000C979C /* EditExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditExerciseViewController.m; sourceTree = "<group>"; };
+		F5BDA13718DADFCA000C979C /* AddExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddExerciseViewController.h; sourceTree = "<group>"; };
+		F5BDA13818DADFCA000C979C /* AddExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddExerciseViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F589F93B18DA579700DAEA89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F589F94418DA579700DAEA89 /* CoreGraphics.framework in Frameworks */,
+				F589F94618DA579700DAEA89 /* UIKit.framework in Frameworks */,
+				F589F94218DA579700DAEA89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F589F95F18DA579800DAEA89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F589F96418DA579800DAEA89 /* XCTest.framework in Frameworks */,
+				F589F96618DA579800DAEA89 /* UIKit.framework in Frameworks */,
+				F589F96518DA579800DAEA89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F589F93518DA579700DAEA89 = {
+			isa = PBXGroup;
+			children = (
+				F5BDA13718DADFCA000C979C /* AddExerciseViewController.h */,
+				F5BDA13818DADFCA000C979C /* AddExerciseViewController.m */,
+				F5BDA13418DADFBE000C979C /* EditExerciseViewController.h */,
+				F5BDA13518DADFBE000C979C /* EditExerciseViewController.m */,
+				F589F9F218DADE6600DAEA89 /* EditWorkoutTableViewController.h */,
+				F589F9F318DADE6600DAEA89 /* EditWorkoutTableViewController.m */,
+				F589F9EF18DADDA800DAEA89 /* CurrentExerciseViewController.h */,
+				F589F9F018DADDA800DAEA89 /* CurrentExerciseViewController.m */,
+				F589F9EC18DADD1A00DAEA89 /* DetailedWorkoutViewController.h */,
+				F589F9ED18DADD1A00DAEA89 /* DetailedWorkoutViewController.m */,
+				F589F9E918DADCF600DAEA89 /* WorkoutListTableViewController.h */,
+				F589F9EA18DADCF600DAEA89 /* WorkoutListTableViewController.m */,
+				F589F9BF18DA642300DAEA89 /* LaunchIcons */,
+				F589F9E618DA6F4E00DAEA89 /* CalenderViewController.h */,
+				F589F9E718DA6F4E00DAEA89 /* CalenderViewController.m */,
+				F589F9E318DA6F3C00DAEA89 /* PictureViewController.h */,
+				F589F9E418DA6F3C00DAEA89 /* PictureViewController.m */,
+				F589F9E018DA6EFE00DAEA89 /* WorkoutViewController.h */,
+				F589F9E118DA6EFE00DAEA89 /* WorkoutViewController.m */,
+				F589F9DD18DA6ED600DAEA89 /* NavigationViewController.h */,
+				F589F9DE18DA6ED600DAEA89 /* NavigationViewController.m */,
+				F589F98818DA617200DAEA89 /* startViewController.h */,
+				F589F98918DA617200DAEA89 /* startViewController.m */,
+				F589F98618DA60D700DAEA89 /* Background@R4.png */,
+				F589F97E18DA600200DAEA89 /* Default@R4.png */,
+				F589F97A18DA5EC400DAEA89 /* Default.png */,
+				F589F97B18DA5EC400DAEA89 /* Default@2x.png */,
+				F589F94718DA579700DAEA89 /* Progress */,
+				F589F96918DA579800DAEA89 /* ProgressTests */,
+				F589F94018DA579700DAEA89 /* Frameworks */,
+				F589F93F18DA579700DAEA89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F589F93F18DA579700DAEA89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F589F93E18DA579700DAEA89 /* Progress.app */,
+				F589F96218DA579800DAEA89 /* ProgressTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F589F94018DA579700DAEA89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F589F94118DA579700DAEA89 /* Foundation.framework */,
+				F589F94318DA579700DAEA89 /* CoreGraphics.framework */,
+				F589F94518DA579700DAEA89 /* UIKit.framework */,
+				F589F96318DA579800DAEA89 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F589F94718DA579700DAEA89 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				F589F97918DA581800DAEA89 /* iPad */,
+				F589F95018DA579700DAEA89 /* AppDelegate.h */,
+				F589F95118DA579700DAEA89 /* AppDelegate.m */,
+				F589F95318DA579700DAEA89 /* Main.storyboard */,
+				F589F95C18DA579700DAEA89 /* Images.xcassets */,
+				F589F94818DA579700DAEA89 /* Supporting Files */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		F589F94818DA579700DAEA89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F589F94918DA579700DAEA89 /* Progress-Info.plist */,
+				F589F94A18DA579700DAEA89 /* InfoPlist.strings */,
+				F589F94D18DA579700DAEA89 /* main.m */,
+				F589F94F18DA579700DAEA89 /* Progress-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F589F96918DA579800DAEA89 /* ProgressTests */ = {
+			isa = PBXGroup;
+			children = (
+				F589F96F18DA579800DAEA89 /* ProgressTests.m */,
+				F589F96A18DA579800DAEA89 /* Supporting Files */,
+			);
+			path = ProgressTests;
+			sourceTree = "<group>";
+		};
+		F589F96A18DA579800DAEA89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F589F96B18DA579800DAEA89 /* ProgressTests-Info.plist */,
+				F589F96C18DA579800DAEA89 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F589F97918DA581800DAEA89 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		F589F9BF18DA642300DAEA89 /* LaunchIcons */ = {
+			isa = PBXGroup;
+			children = (
+				F589F9C018DA642300DAEA89 /* AppIcon29x29.png */,
+				F589F9C118DA642300DAEA89 /* AppIcon29x29@2x.png */,
+				F589F9C218DA642300DAEA89 /* AppIcon40x40.png */,
+				F589F9C318DA642300DAEA89 /* AppIcon40x40@2x.png */,
+				F589F9C418DA642300DAEA89 /* AppIcon50x50.png */,
+				F589F9C518DA642300DAEA89 /* AppIcon50x50@2x.png */,
+				F589F9C618DA642300DAEA89 /* AppIcon57x57.png */,
+				F589F9C718DA642300DAEA89 /* AppIcon57x57@2x.png */,
+				F589F9C818DA642300DAEA89 /* AppIcon60x60.png */,
+				F589F9C918DA642300DAEA89 /* AppIcon60x60@2x.png */,
+				F589F9CA18DA642300DAEA89 /* AppIcon72x72.png */,
+				F589F9CB18DA642300DAEA89 /* AppIcon72x72@2x.png */,
+				F589F9CC18DA642300DAEA89 /* AppIcon76x76.png */,
+				F589F9CD18DA642300DAEA89 /* AppIcon76x76@2x.png */,
+			);
+			name = LaunchIcons;
+			path = ProgressApplicationIcons/LaunchIcons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F589F93D18DA579700DAEA89 /* Progress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F589F97318DA579800DAEA89 /* Build configuration list for PBXNativeTarget "Progress" */;
+			buildPhases = (
+				F589F93A18DA579700DAEA89 /* Sources */,
+				F589F93B18DA579700DAEA89 /* Frameworks */,
+				F589F93C18DA579700DAEA89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Progress;
+			productName = Progress;
+			productReference = F589F93E18DA579700DAEA89 /* Progress.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F589F96118DA579800DAEA89 /* ProgressTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F589F97618DA579800DAEA89 /* Build configuration list for PBXNativeTarget "ProgressTests" */;
+			buildPhases = (
+				F589F95E18DA579800DAEA89 /* Sources */,
+				F589F95F18DA579800DAEA89 /* Frameworks */,
+				F589F96018DA579800DAEA89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F589F96818DA579800DAEA89 /* PBXTargetDependency */,
+			);
+			name = ProgressTests;
+			productName = ProgressTests;
+			productReference = F589F96218DA579800DAEA89 /* ProgressTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F589F93618DA579700DAEA89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = FHICT;
+				TargetAttributes = {
+					F589F96118DA579800DAEA89 = {
+						TestTargetID = F589F93D18DA579700DAEA89;
+					};
+				};
+			};
+			buildConfigurationList = F589F93918DA579700DAEA89 /* Build configuration list for PBXProject "Progress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F589F93518DA579700DAEA89;
+			productRefGroup = F589F93F18DA579700DAEA89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F589F93D18DA579700DAEA89 /* Progress */,
+				F589F96118DA579800DAEA89 /* ProgressTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F589F93C18DA579700DAEA89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F589F9D518DA642300DAEA89 /* AppIcon57x57@2x.png in Resources */,
+				F589F95D18DA579700DAEA89 /* Images.xcassets in Resources */,
+				F589F9D118DA642300DAEA89 /* AppIcon40x40@2x.png in Resources */,
+				F589F9D918DA642300DAEA89 /* AppIcon72x72@2x.png in Resources */,
+				F589F94C18DA579700DAEA89 /* InfoPlist.strings in Resources */,
+				F589F9D018DA642300DAEA89 /* AppIcon40x40.png in Resources */,
+				F589F9D218DA642300DAEA89 /* AppIcon50x50.png in Resources */,
+				F589F9CF18DA642300DAEA89 /* AppIcon29x29@2x.png in Resources */,
+				F589F98718DA60D700DAEA89 /* Background@R4.png in Resources */,
+				F589F9D718DA642300DAEA89 /* AppIcon60x60@2x.png in Resources */,
+				F589F97D18DA5EC400DAEA89 /* Default@2x.png in Resources */,
+				F589F9DA18DA642300DAEA89 /* AppIcon76x76.png in Resources */,
+				F589F9D818DA642300DAEA89 /* AppIcon72x72.png in Resources */,
+				F589F95518DA579700DAEA89 /* Main.storyboard in Resources */,
+				F589F9D318DA642300DAEA89 /* AppIcon50x50@2x.png in Resources */,
+				F589F9D418DA642300DAEA89 /* AppIcon57x57.png in Resources */,
+				F589F9CE18DA642300DAEA89 /* AppIcon29x29.png in Resources */,
+				F589F9DB18DA642300DAEA89 /* AppIcon76x76@2x.png in Resources */,
+				F589F97F18DA600200DAEA89 /* Default@R4.png in Resources */,
+				F589F9D618DA642300DAEA89 /* AppIcon60x60.png in Resources */,
+				F589F97C18DA5EC400DAEA89 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F589F96018DA579800DAEA89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F589F96E18DA579800DAEA89 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F589F93A18DA579700DAEA89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F589F9DF18DA6ED600DAEA89 /* NavigationViewController.m in Sources */,
+				F589F9EE18DADD1A00DAEA89 /* DetailedWorkoutViewController.m in Sources */,
+				F589F9E518DA6F3C00DAEA89 /* PictureViewController.m in Sources */,
+				F589F9EB18DADCF600DAEA89 /* WorkoutListTableViewController.m in Sources */,
+				F589F9F418DADE6600DAEA89 /* EditWorkoutTableViewController.m in Sources */,
+				F589F9DC18DA662000DAEA89 /* startViewController.m in Sources */,
+				F589F9E218DA6EFE00DAEA89 /* WorkoutViewController.m in Sources */,
+				F589F9F118DADDA800DAEA89 /* CurrentExerciseViewController.m in Sources */,
+				F5BDA13618DADFBE000C979C /* EditExerciseViewController.m in Sources */,
+				F589F95218DA579700DAEA89 /* AppDelegate.m in Sources */,
+				F589F94E18DA579700DAEA89 /* main.m in Sources */,
+				F589F9E818DA6F4E00DAEA89 /* CalenderViewController.m in Sources */,
+				F5BDA13918DADFCA000C979C /* AddExerciseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F589F95E18DA579800DAEA89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F589F97018DA579800DAEA89 /* ProgressTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F589F96818DA579800DAEA89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F589F93D18DA579700DAEA89 /* Progress */;
+			targetProxy = F589F96718DA579800DAEA89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F589F94A18DA579700DAEA89 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F589F94B18DA579700DAEA89 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F589F95318DA579700DAEA89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F589F95418DA579700DAEA89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F589F96C18DA579800DAEA89 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F589F96D18DA579800DAEA89 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F589F97118DA579800DAEA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F589F97218DA579800DAEA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F589F97418DA579800DAEA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Progress/Progress-Prefix.pch";
+				INFOPLIST_FILE = "Progress/Progress-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F589F97518DA579800DAEA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Progress/Progress-Prefix.pch";
+				INFOPLIST_FILE = "Progress/Progress-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F589F97718DA579800DAEA89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Progress.app/Progress";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Progress/Progress-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ProgressTests/ProgressTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F589F97818DA579800DAEA89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Progress.app/Progress";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Progress/Progress-Prefix.pch";
+				INFOPLIST_FILE = "ProgressTests/ProgressTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F589F93918DA579700DAEA89 /* Build configuration list for PBXProject "Progress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F589F97118DA579800DAEA89 /* Debug */,
+				F589F97218DA579800DAEA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F589F97318DA579800DAEA89 /* Build configuration list for PBXNativeTarget "Progress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F589F97418DA579800DAEA89 /* Debug */,
+				F589F97518DA579800DAEA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F589F97618DA579800DAEA89 /* Build configuration list for PBXNativeTarget "ProgressTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F589F97718DA579800DAEA89 /* Debug */,
+				F589F97818DA579800DAEA89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F589F93618DA579700DAEA89 /* Project object */;
+}
