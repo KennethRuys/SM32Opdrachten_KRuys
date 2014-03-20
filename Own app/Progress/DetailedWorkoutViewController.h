@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailedWorkoutViewController : UIViewController
-- (IBAction)BarButton:(id)sender;
+- (IBAction)BackButton:(UIButton *)sender;
+
 
 @end

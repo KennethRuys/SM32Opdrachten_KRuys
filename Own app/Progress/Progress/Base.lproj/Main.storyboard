@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qlj-Fn-fFS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3ah-JJ-fzm">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -57,11 +57,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="6Qs-eG-4E2"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWD-GU-OgZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="8"/>
+            <point key="canvasLocation" x="666" y="8"/>
         </scene>
         <!--Workout View Controller - Workout-->
         <scene sceneID="w1c-Tn-ypK">
@@ -82,7 +83,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="A1X-k4-Hdu" kind="modal" id="ZC8-zS-DK4"/>
+                                    <segue destination="94d-QR-DAR" kind="modal" id="sng-3y-2Tv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YA1-eF-fcY">
@@ -92,7 +93,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="w9I-Xq-jma" kind="modal" id="KVw-DH-3lg"/>
+                                    <segue destination="rVd-MO-6Bh" kind="modal" id="sHY-GT-DmD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -102,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9c-FT-8IW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1139" y="-319"/>
+            <point key="canvasLocation" x="1665" y="-319"/>
         </scene>
         <!--Workout List Table View Controller-->
         <scene sceneID="SfT-sn-ewZ">
@@ -113,15 +114,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="wrH-a3-KDp">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="wrH-a3-KDp">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wrH-a3-KDp" id="hWP-kY-2Og">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="b36-zF-WgJ" kind="modal" id="FE7-tE-ohw"/>
+                                    <segue destination="b36-zF-WgJ" kind="modal" id="2T9-2C-ckR"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -130,10 +131,25 @@
                             <outlet property="delegate" destination="w9I-Xq-jma" id="RhB-ez-Mmb"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="t5R-US-fR8">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gjq-98-PiU">
+                            <rect key="frame" x="52" y="7" width="217" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Back because NavBar issues....">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="BackButton:" destination="w9I-Xq-jma" eventType="touchUpInside" id="IDW-jV-BEb"/>
+                                <action selector="BackButton:" destination="ooc-01-Irv" eventType="touchUpInside" id="hIw-jJ-mg7"/>
+                                <action selector="BackButton:" destination="b36-zF-WgJ" eventType="touchUpInside" id="pes-Et-qOH"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7W-zi-t94" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1912" y="-1351"/>
+            <point key="canvasLocation" x="2438" y="-1351"/>
         </scene>
         <!--Detailed Workout View Controller-->
         <scene sceneID="g2f-yy-YW2">
@@ -163,6 +179,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIK-Ih-aW8">
+                                <rect key="frame" x="20" y="20" width="217" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back because NavBar issues....">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackButton:" destination="ooc-01-Irv" eventType="touchUpInside" id="PPv-hK-0g3"/>
+                                    <action selector="BackButton:" destination="b36-zF-WgJ" eventType="touchUpInside" id="hTb-EJ-9nX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -171,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smQ-pH-DRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2419" y="-1358"/>
+            <point key="canvasLocation" x="2945" y="-1359"/>
         </scene>
         <!--Current Exercise View Controller-->
         <scene sceneID="E3g-td-lCG">
@@ -206,6 +233,16 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz7-G9-Tee">
+                                <rect key="frame" x="20" y="20" width="217" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back because NavBar issues....">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackButton:" destination="ooc-01-Irv" eventType="touchUpInside" id="zae-mQ-IxU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -214,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdu-el-hAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2901" y="-1351"/>
+            <point key="canvasLocation" x="3427" y="-1351"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="7JS-zc-oTc">
@@ -235,7 +272,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A8T-DJ-9Lw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605" y="8"/>
+            <point key="canvasLocation" x="1131" y="8"/>
         </scene>
         <!--Picture View Controller - Picture-->
         <scene sceneID="19W-bo-J5K">
@@ -276,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4z-L6-KLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1139" y="334"/>
+            <point key="canvasLocation" x="1665" y="334"/>
         </scene>
         <!--Calender View Controller - Scedule-->
         <scene sceneID="FJf-3a-7bD">
@@ -326,7 +363,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="myi-Un-lyB">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="myi-Un-lyB" id="cq9-kt-Kr9">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -342,10 +379,25 @@
                             <outlet property="delegate" destination="A1X-k4-Hdu" id="z8O-GZ-DAe"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="TvS-6i-u8P">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UPo-SM-FMI">
+                            <rect key="frame" x="52" y="7" width="217" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Back because NavBar issues....">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="BackButton:" destination="b36-zF-WgJ" eventType="touchUpInside" id="05u-3D-Vrn"/>
+                                <action selector="BackButton:" destination="A1X-k4-Hdu" eventType="touchUpInside" id="E60-mI-H1u"/>
+                                <action selector="BackButton:" destination="kCL-gk-0pt" eventType="touchUpInside" id="iLy-jg-Qlo"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQz-c9-dxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1912" y="-637"/>
+            <point key="canvasLocation" x="2438" y="-637"/>
         </scene>
         <!--Edit Exercise View Controller-->
         <scene sceneID="k5d-oB-gEO">
@@ -386,6 +438,17 @@
                                     <segue destination="XqA-nO-BJx" kind="modal" id="8pk-dJ-Ssk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWm-hh-88n">
+                                <rect key="frame" x="54" y="12" width="217" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back because NavBar issues....">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackButton:" destination="kCL-gk-0pt" eventType="touchUpInside" id="1H0-XV-nHZ"/>
+                                    <action selector="BackButton:" destination="b36-zF-WgJ" eventType="touchUpInside" id="5T8-Cj-OBG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -394,7 +457,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x9t-TX-mrn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2419" y="-637"/>
+            <point key="canvasLocation" x="2945" y="-637"/>
         </scene>
         <!--Add Exercise View Controller-->
         <scene sceneID="DU0-yG-k0n">
@@ -422,18 +485,30 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZB-Uc-ZGP">
+                                <rect key="frame" x="59" y="20" width="217" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back because NavBar issues....">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackButton:" destination="b36-zF-WgJ" eventType="touchUpInside" id="Y3o-Nz-yiP"/>
+                                    <action selector="BackButton:" destination="ooc-01-Irv" eventType="touchUpInside" id="ZQh-zq-l7c"/>
+                                    <action selector="BackButton:" destination="XqA-nO-BJx" eventType="touchUpInside" id="t9N-qQ-EtX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43Z-kb-TcJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2900" y="-638"/>
+            <point key="canvasLocation" x="3426" y="-638"/>
         </scene>
-        <!--View Controller-->
+        <!--Take Picture View Controller-->
         <scene sceneID="CFI-e2-rrZ">
             <objects>
-                <viewController id="OUS-cb-qMi" sceneMemberID="viewController">
+                <viewController id="OUS-cb-qMi" customClass="TakePictureViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="meq-da-4Z1"/>
                         <viewControllerLayoutGuide type="bottom" id="tol-rp-tLS"/>
@@ -448,18 +523,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFw-bB-NaM">
+                                <rect key="frame" x="68" y="20" width="217" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back because NavBar issues....">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackButton:" destination="b36-zF-WgJ" eventType="touchUpInside" id="1mT-If-V4Y"/>
+                                    <action selector="BackButton:" destination="OUS-cb-qMi" eventType="touchUpInside" id="BaX-7z-DMW"/>
+                                    <action selector="BackButton:" destination="ooc-01-Irv" eventType="touchUpInside" id="NS7-5T-oY3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BoL-Yi-PD8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1912" y="34"/>
+            <point key="canvasLocation" x="2438" y="34"/>
         </scene>
-        <!--View Controller-->
+        <!--View Picture View Controller-->
         <scene sceneID="iJs-tI-xmT">
             <objects>
-                <viewController id="ftA-L3-qfz" sceneMemberID="viewController">
+                <viewController id="ftA-L3-qfz" customClass="ViewPictureViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JgE-X9-VYI"/>
                         <viewControllerLayoutGuide type="bottom" id="S6x-tg-cNV"/>
@@ -474,18 +561,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk5-Qw-T1S">
+                                <rect key="frame" x="52" y="8" width="217" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back because NavBar issues....">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackButton:" destination="ooc-01-Irv" eventType="touchUpInside" id="5Hv-QX-2qC"/>
+                                    <action selector="BackButton:" destination="ftA-L3-qfz" eventType="touchUpInside" id="WKL-nD-4Mx"/>
+                                    <action selector="BackButton:" destination="b36-zF-WgJ" eventType="touchUpInside" id="WZ7-Tv-qCg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NEm-cp-Ao5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1912" y="712"/>
+            <point key="canvasLocation" x="2438" y="714"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Calender View Controller-->
         <scene sceneID="n1i-9A-aXb">
             <objects>
-                <viewController id="vx8-LX-1Dq" sceneMemberID="viewController">
+                <viewController id="vx8-LX-1Dq" customClass="AddCalenderViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rc6-Oj-NwN"/>
                         <viewControllerLayoutGuide type="bottom" id="tq7-Ba-r6c"/>
@@ -512,6 +611,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hJ-K4-GCg">
+                                <rect key="frame" x="48" y="20" width="217" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back because NavBar issues....">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackButton:" destination="vx8-LX-1Dq" eventType="touchUpInside" id="Fu2-Ko-lIy"/>
+                                    <action selector="BackButton:" destination="b36-zF-WgJ" eventType="touchUpInside" id="MuZ-Xo-Hbb"/>
+                                    <action selector="BackButton:" destination="ooc-01-Irv" eventType="touchUpInside" id="uIg-0i-hyV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -519,6 +630,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xar-2k-cCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1912" y="1412"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1af-xG-ZYo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3ah-JJ-fzm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ADP-P8-1hD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qlj-Fn-fFS" kind="relationship" relationship="rootViewController" id="lqw-gZ-dG1"/>
+                        <segue destination="qlj-Fn-fFS" kind="push" id="rnS-WO-foR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ZL-On-RKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="8"/>
+        </scene>
+        <!--Workout Navigation View Controller-->
+        <scene sceneID="7G3-dg-pt9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rVd-MO-6Bh" customClass="WorkoutNavigationViewController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RIP-Gy-O27">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="w9I-Xq-jma" kind="relationship" relationship="rootViewController" id="eH2-OI-A5F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ays-es-SvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="-1351"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HH9-10-mER">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="94d-QR-DAR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pfp-jV-Xqn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A1X-k4-Hdu" kind="relationship" relationship="rootViewController" id="ciK-nx-hly"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kaT-Mq-zPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="-637"/>
         </scene>
     </scenes>
     <resources>
@@ -532,6 +698,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="DYa-Db-HDJ"/>
+        <segue reference="lqw-gZ-dG1"/>
         <segue reference="8pk-dJ-Ssk"/>
     </inferredMetricsTieBreakers>
 </document>

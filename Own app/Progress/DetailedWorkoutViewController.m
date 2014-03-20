@@ -19,7 +19,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.navigationController.toolbarHidden = NO; 
+        self.navigationController.toolbarHidden = NO;
+         self.title = @"Detailed Exercise";
     }
     return self;
 }
@@ -47,6 +48,7 @@
 }
 */
 
-- (IBAction)BarButton:(id)sender {
+- (IBAction)BackButton:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

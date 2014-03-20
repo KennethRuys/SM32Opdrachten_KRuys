@@ -1,5 +1,5 @@
 //
-//  EditExerciseViewController.h
+//  TakePictureViewController.h
 //  Progress
 //
 //  Created by FHICT on 20/03/14.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditExerciseViewController : UIViewController
+@interface TakePictureViewController : UIViewController
 - (IBAction)BackButton:(UIButton *)sender;
-
 
 @end

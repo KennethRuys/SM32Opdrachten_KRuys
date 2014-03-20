@@ -1,5 +1,5 @@
 //
-//  EditExerciseViewController.h
+//  WorkoutNavigationViewController.h
 //  Progress
 //
 //  Created by FHICT on 20/03/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditExerciseViewController : UIViewController
-- (IBAction)BackButton:(UIButton *)sender;
-
+@interface WorkoutNavigationViewController : UINavigationController
 
 @end

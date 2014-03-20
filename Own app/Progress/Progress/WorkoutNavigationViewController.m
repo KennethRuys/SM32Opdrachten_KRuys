@@ -1,18 +1,18 @@
 //
-//  AddExerciseViewController.m
+//  WorkoutNavigationViewController.m
 //  Progress
 //
 //  Created by FHICT on 20/03/14.
 //  Copyright (c) 2014 FHICT. All rights reserved.
 //
 
-#import "AddExerciseViewController.h"
+#import "WorkoutNavigationViewController.h"
 
-@interface AddExerciseViewController ()
+@interface WorkoutNavigationViewController ()
 
 @end
 
-@implementation AddExerciseViewController
+@implementation WorkoutNavigationViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+        self.navigationItem.hidesBackButton = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,7 +47,4 @@
 }
 */
 
-- (IBAction)BackButton:(UIButton *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 @end

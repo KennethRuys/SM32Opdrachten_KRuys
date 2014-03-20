@@ -46,4 +46,7 @@
 }
 */
 
+- (IBAction)BackButton:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

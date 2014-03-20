@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AddExerciseViewController : UIViewController
+- (IBAction)BackButton:(UIButton *)sender;
 
 @end

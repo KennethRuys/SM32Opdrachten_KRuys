@@ -42,13 +42,17 @@
 		F589F9DF18DA6ED600DAEA89 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9DE18DA6ED600DAEA89 /* NavigationViewController.m */; };
 		F589F9E218DA6EFE00DAEA89 /* WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9E118DA6EFE00DAEA89 /* WorkoutViewController.m */; };
 		F589F9E518DA6F3C00DAEA89 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9E418DA6F3C00DAEA89 /* PictureViewController.m */; };
-		F589F9E818DA6F4E00DAEA89 /* CalenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9E718DA6F4E00DAEA89 /* CalenderViewController.m */; };
 		F589F9EB18DADCF600DAEA89 /* WorkoutListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9EA18DADCF600DAEA89 /* WorkoutListTableViewController.m */; };
 		F589F9EE18DADD1A00DAEA89 /* DetailedWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9ED18DADD1A00DAEA89 /* DetailedWorkoutViewController.m */; };
 		F589F9F118DADDA800DAEA89 /* CurrentExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9F018DADDA800DAEA89 /* CurrentExerciseViewController.m */; };
 		F589F9F418DADE6600DAEA89 /* EditWorkoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F9F318DADE6600DAEA89 /* EditWorkoutTableViewController.m */; };
 		F5BDA13618DADFBE000C979C /* EditExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDA13518DADFBE000C979C /* EditExerciseViewController.m */; };
 		F5BDA13918DADFCA000C979C /* AddExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDA13818DADFCA000C979C /* AddExerciseViewController.m */; };
+		F5BDA13F18DB08A2000C979C /* WorkoutNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDA13E18DB08A2000C979C /* WorkoutNavigationViewController.m */; };
+		F5BDA14218DB101A000C979C /* TakePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDA14118DB101A000C979C /* TakePictureViewController.m */; };
+		F5BDA14518DB107B000C979C /* ViewPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDA14418DB107B000C979C /* ViewPictureViewController.m */; };
+		F5BDA14818DB10BC000C979C /* CalenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDA14718DB10BC000C979C /* CalenderViewController.m */; };
+		F5BDA14B18DB10E8000C979C /* AddCalenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDA14A18DB10E8000C979C /* AddCalenderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,8 +109,6 @@
 		F589F9E118DA6EFE00DAEA89 /* WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutViewController.m; sourceTree = "<group>"; };
 		F589F9E318DA6F3C00DAEA89 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
 		F589F9E418DA6F3C00DAEA89 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
-		F589F9E618DA6F4E00DAEA89 /* CalenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderViewController.h; sourceTree = "<group>"; };
-		F589F9E718DA6F4E00DAEA89 /* CalenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderViewController.m; sourceTree = "<group>"; };
 		F589F9E918DADCF600DAEA89 /* WorkoutListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutListTableViewController.h; sourceTree = "<group>"; };
 		F589F9EA18DADCF600DAEA89 /* WorkoutListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutListTableViewController.m; sourceTree = "<group>"; };
 		F589F9EC18DADD1A00DAEA89 /* DetailedWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedWorkoutViewController.h; sourceTree = "<group>"; };
@@ -119,6 +121,16 @@
 		F5BDA13518DADFBE000C979C /* EditExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditExerciseViewController.m; sourceTree = "<group>"; };
 		F5BDA13718DADFCA000C979C /* AddExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddExerciseViewController.h; sourceTree = "<group>"; };
 		F5BDA13818DADFCA000C979C /* AddExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddExerciseViewController.m; sourceTree = "<group>"; };
+		F5BDA13D18DB08A2000C979C /* WorkoutNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutNavigationViewController.h; sourceTree = "<group>"; };
+		F5BDA13E18DB08A2000C979C /* WorkoutNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutNavigationViewController.m; sourceTree = "<group>"; };
+		F5BDA14018DB101A000C979C /* TakePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePictureViewController.h; sourceTree = "<group>"; };
+		F5BDA14118DB101A000C979C /* TakePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePictureViewController.m; sourceTree = "<group>"; };
+		F5BDA14318DB107B000C979C /* ViewPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPictureViewController.h; sourceTree = "<group>"; };
+		F5BDA14418DB107B000C979C /* ViewPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewPictureViewController.m; sourceTree = "<group>"; };
+		F5BDA14618DB10BC000C979C /* CalenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderViewController.h; sourceTree = "<group>"; };
+		F5BDA14718DB10BC000C979C /* CalenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderViewController.m; sourceTree = "<group>"; };
+		F5BDA14918DB10E8000C979C /* AddCalenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCalenderViewController.h; sourceTree = "<group>"; };
+		F5BDA14A18DB10E8000C979C /* AddCalenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCalenderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +160,14 @@
 		F589F93518DA579700DAEA89 = {
 			isa = PBXGroup;
 			children = (
+				F5BDA14918DB10E8000C979C /* AddCalenderViewController.h */,
+				F5BDA14A18DB10E8000C979C /* AddCalenderViewController.m */,
+				F5BDA14618DB10BC000C979C /* CalenderViewController.h */,
+				F5BDA14718DB10BC000C979C /* CalenderViewController.m */,
+				F5BDA14318DB107B000C979C /* ViewPictureViewController.h */,
+				F5BDA14418DB107B000C979C /* ViewPictureViewController.m */,
+				F5BDA14018DB101A000C979C /* TakePictureViewController.h */,
+				F5BDA14118DB101A000C979C /* TakePictureViewController.m */,
 				F5BDA13718DADFCA000C979C /* AddExerciseViewController.h */,
 				F5BDA13818DADFCA000C979C /* AddExerciseViewController.m */,
 				F5BDA13418DADFBE000C979C /* EditExerciseViewController.h */,
@@ -161,8 +181,6 @@
 				F589F9E918DADCF600DAEA89 /* WorkoutListTableViewController.h */,
 				F589F9EA18DADCF600DAEA89 /* WorkoutListTableViewController.m */,
 				F589F9BF18DA642300DAEA89 /* LaunchIcons */,
-				F589F9E618DA6F4E00DAEA89 /* CalenderViewController.h */,
-				F589F9E718DA6F4E00DAEA89 /* CalenderViewController.m */,
 				F589F9E318DA6F3C00DAEA89 /* PictureViewController.h */,
 				F589F9E418DA6F3C00DAEA89 /* PictureViewController.m */,
 				F589F9E018DA6EFE00DAEA89 /* WorkoutViewController.h */,
@@ -209,6 +227,8 @@
 				F589F95018DA579700DAEA89 /* AppDelegate.h */,
 				F589F95118DA579700DAEA89 /* AppDelegate.m */,
 				F589F95318DA579700DAEA89 /* Main.storyboard */,
+				F5BDA13D18DB08A2000C979C /* WorkoutNavigationViewController.h */,
+				F5BDA13E18DB08A2000C979C /* WorkoutNavigationViewController.m */,
 				F589F95C18DA579700DAEA89 /* Images.xcassets */,
 				F589F94818DA579700DAEA89 /* Supporting Files */,
 			);
@@ -388,18 +408,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BDA14818DB10BC000C979C /* CalenderViewController.m in Sources */,
+				F5BDA13F18DB08A2000C979C /* WorkoutNavigationViewController.m in Sources */,
 				F589F9DF18DA6ED600DAEA89 /* NavigationViewController.m in Sources */,
 				F589F9EE18DADD1A00DAEA89 /* DetailedWorkoutViewController.m in Sources */,
 				F589F9E518DA6F3C00DAEA89 /* PictureViewController.m in Sources */,
 				F589F9EB18DADCF600DAEA89 /* WorkoutListTableViewController.m in Sources */,
 				F589F9F418DADE6600DAEA89 /* EditWorkoutTableViewController.m in Sources */,
+				F5BDA14B18DB10E8000C979C /* AddCalenderViewController.m in Sources */,
 				F589F9DC18DA662000DAEA89 /* startViewController.m in Sources */,
+				F5BDA14218DB101A000C979C /* TakePictureViewController.m in Sources */,
 				F589F9E218DA6EFE00DAEA89 /* WorkoutViewController.m in Sources */,
 				F589F9F118DADDA800DAEA89 /* CurrentExerciseViewController.m in Sources */,
 				F5BDA13618DADFBE000C979C /* EditExerciseViewController.m in Sources */,
 				F589F95218DA579700DAEA89 /* AppDelegate.m in Sources */,
+				F5BDA14518DB107B000C979C /* ViewPictureViewController.m in Sources */,
 				F589F94E18DA579700DAEA89 /* main.m in Sources */,
-				F589F9E818DA6F4E00DAEA89 /* CalenderViewController.m in Sources */,
 				F5BDA13918DADFCA000C979C /* AddExerciseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

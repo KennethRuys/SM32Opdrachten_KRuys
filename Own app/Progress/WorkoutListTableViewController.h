@@ -11,5 +11,6 @@
 @interface WorkoutListTableViewController : UITableViewController
 
 @property NSMutableArray *workouts;
+- (IBAction)BackButton:(UIButton *)sender;
 
 @end

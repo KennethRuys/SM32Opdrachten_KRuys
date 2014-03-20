@@ -1,18 +1,18 @@
 //
-//  AddExerciseViewController.m
+//  ViewPictureViewController.m
 //  Progress
 //
 //  Created by FHICT on 20/03/14.
 //  Copyright (c) 2014 FHICT. All rights reserved.
 //
 
-#import "AddExerciseViewController.h"
+#import "ViewPictureViewController.h"
 
-@interface AddExerciseViewController ()
+@interface ViewPictureViewController ()
 
 @end
 
-@implementation AddExerciseViewController
+@implementation ViewPictureViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

@@ -37,6 +37,8 @@
     NSString *name = @"temp";
     [self.workouts addObject:name];
     [self.tableView reloadData];
+    self.title = @"Detailed Exercise";
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -129,4 +131,7 @@
 }
 */
 
+- (IBAction)BackButton:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

@@ -10,4 +10,7 @@
 
 @interface EditWorkoutTableViewController : UITableViewController
 
+@property NSMutableArray *workouts;
+- (IBAction)BackButton:(UIButton *)sender;
+
 @end
