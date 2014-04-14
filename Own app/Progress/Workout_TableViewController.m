@@ -1,18 +1,18 @@
 //
-//  WorkoutListTableViewController.m
+//  Workout_TableViewController.m
 //  Progress
 //
-//  Created by FHICT on 20/03/14.
+//  Created by FHICT on 27/03/14.
 //  Copyright (c) 2014 FHICT. All rights reserved.
 //
 
-#import "WorkoutListTableViewController.h"
+#import "Workout_TableViewController.h"
 
-@interface WorkoutListTableViewController ()
+@interface Workout_TableViewController ()
 
 @end
 
-@implementation WorkoutListTableViewController
+@implementation Workout_TableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -31,14 +31,12 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    self.workouts = [[NSMutableArray alloc] init];
-    NSString *name = @"temp";
-    [self.workouts addObject:name];
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.temp = [[NSMutableArray alloc] init];
+    [self.temp addObject:@"test1"];
+    [self.temp addObject:@"test2"];
+    [self.temp addObject:@"test3"];
     [self.tableView reloadData];
-    self.title = @"Detailed Exercise";
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,7 +49,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
@@ -60,65 +57,59 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return self.workouts.count;
+    return self.temp.count;
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //Get the cell. Note that this name is the same as in the storyboard
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    //Set the correct name in the cell.
-    //Do so by looking up the row in indexpath and choosing the same element in the array
-    NSInteger currentRow = indexPath.row;
-    NSString * currentWorkout = [self.workouts objectAtIndex:currentRow];
+    // Configure the cell...
     
-    NSString *textForCell = currentWorkout;
-    
-    //Set the text in the cell
-    cell.textLabel.text = textForCell;
-    
+    cell.textLabel.text = [self.temp objectAtIndex:indexPath.row];
     return cell;
 }
 
-/*
+
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
+
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        [self.temp removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
 
-/*
+
+
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
 }
-*/
 
-/*
+
+
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
-*/
+
 
 /*
 #pragma mark - Navigation
@@ -131,7 +122,4 @@
 }
 */
 
-- (IBAction)BackButton:(UIButton *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 @end
