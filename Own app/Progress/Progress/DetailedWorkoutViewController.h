@@ -18,9 +18,29 @@ NSMutableArray *X_first_record_array;
 NSMutableArray *Y_first_record_array;
 NSMutableArray *Z_first_record_array;
 
+NSMutableArray *X_array_container;
+NSMutableArray *Y_array_container;
+NSMutableArray *Z_array_container;
+
+NSMutableArray *X_current;
+NSMutableArray *Y_current;
+NSMutableArray *Z_current;
+
+NSMutableArray *X_current_delta;
+NSMutableArray *Y_current_delta;
+NSMutableArray *Z_current_delta;
+
+NSMutableArray *X_current_MA;
+NSMutableArray *Y_current_MA;
+NSMutableArray *Z_current_MA;
+
 double X_baseline;
 double Y_baseline;
 double Z_baseline;
+
+int amountOfTimesDone = 0;
+bool previousValue = false;
+int skipTill = 0;
 
 
 @interface DetailedWorkoutViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -34,5 +54,8 @@ double Z_baseline;
 - (IBAction)baselineMeasurement:(id)sender;
 - (IBAction)firstRecordingStart:(id)sender;
 - (IBAction)firstRecordingStop:(id)sender;
+
+- (IBAction)start_check:(id)sender;
+- (IBAction)stop_check:(id)sender;
 
 @end
