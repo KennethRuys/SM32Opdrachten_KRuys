@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreMotion/CoreMotion.h>
 #import <Parse/Parse.h>
-
+#import "Math_functions.h"
 
 NSMutableArray *X_baseline_array;
 NSMutableArray *Y_baseline_array;
@@ -42,6 +42,9 @@ double Z_baseline;
 int amountOfTimesDone = 0;
 bool previousValue = false;
 int skipTill = 0;
+
+Math_functions *mf;
+
 
 
 @interface DetailedWorkoutViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>

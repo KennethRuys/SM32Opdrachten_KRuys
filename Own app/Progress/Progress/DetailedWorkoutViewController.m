@@ -60,6 +60,8 @@
     Y_current_MA = [[NSMutableArray alloc] init];
     Z_current_MA = [[NSMutableArray alloc] init];
     
+    mf = [[Math_functions alloc] init];
+    
     NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Sit ups 10x", @"Crunches 20x", @"Forward press 100kg 10x", @"Deadlift 200kg 10x", @"Running 10km", nil];
     [self setContentsList:array];
     
@@ -98,20 +100,12 @@
         }
     }];
     
-    X_baseline = [self computeAverage:X_baseline_array];
-    Y_baseline = [self computeAverage:Y_baseline_array];
-    Z_baseline = [self computeAverage:Z_baseline_array];
+    X_baseline = [mf computeAverage:X_baseline_array];
+    Y_baseline = [mf computeAverage:Y_baseline_array];
+    Z_baseline = [mf computeAverage:Z_baseline_array];
 }
 
--(double)computeAverage:(NSMutableArray*)source_array
-{
-    double storage = 0;
-    for(int i = 0; i < source_array.count; i++)
-    {
-        storage += [source_array[i] doubleValue];
-    }
-    return storage/source_array.count;
-}
+
 
 -(void)baseline_outputAccelertionData:(CMAcceleration)acceleration
 {
@@ -212,25 +206,25 @@
     [Y_current addObject:[NSNumber numberWithDouble:acceleration.y-Y_baseline]];
     [Z_current addObject:[NSNumber numberWithDouble:acceleration.z-Z_baseline]];
     
-    [self convertToDeltaArray:X_current : X_current_delta];
-    [self convertToDeltaArray:Y_current : Y_current_delta];
-    [self convertToDeltaArray:Z_current : Z_current_delta];
+    [mf convertToDeltaArray:X_current : X_current_delta];
+    [mf convertToDeltaArray:Y_current : Y_current_delta];
+    [mf convertToDeltaArray:Z_current : Z_current_delta];
     
-    [self convertToMovingAverage:X_current_delta : X_current_MA];
-    [self convertToMovingAverage:Y_current_delta : Y_current_MA];
-    [self convertToMovingAverage:Z_current_delta : Z_current_MA];
+    [mf convertToMovingAverage:X_current_delta : X_current_MA];
+    [mf convertToMovingAverage:Y_current_delta : Y_current_MA];
+    [mf convertToMovingAverage:Z_current_delta : Z_current_MA];
     
     if(X_current_MA.count > 20)
     {
-        x_check = [self arrayCompare:X_current_MA : X_array_container];
+        x_check = [mf arrayCompare:X_current_MA : X_array_container];
     }
     if(Y_current_MA.count > 20)
     {
-        y_check = [self arrayCompare:Y_current_MA : Y_array_container];
+        y_check = [mf arrayCompare:Y_current_MA : Y_array_container];
     }
     if(Z_current_MA.count > 20)
     {
-        z_check = [self arrayCompare:Z_current_MA : Z_array_container];
+        z_check = [mf arrayCompare:Z_current_MA : Z_array_container];
     }
     
     if(x_check && y_check && z_check && skipTill >= 10)
@@ -361,17 +355,17 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     NSMutableArray * Y_DE = [[NSMutableArray alloc]init];
     NSMutableArray * Z_DE = [[NSMutableArray alloc]init];
     
-    [self convertToMovingAverage:X_first_record_array : X_MA];
-    [self convertToMovingAverage:Y_first_record_array : Y_MA];
-    [self convertToMovingAverage:Z_first_record_array : Z_MA];
+    [mf convertToMovingAverage:X_first_record_array : X_MA];
+    [mf convertToMovingAverage:Y_first_record_array : Y_MA];
+    [mf convertToMovingAverage:Z_first_record_array : Z_MA];
     
-    [self convertToDeltaArray:X_MA : X_DE];
-    [self convertToDeltaArray:Y_MA : Y_DE];
-    [self convertToDeltaArray:Z_MA : Z_DE];
+    [mf convertToDeltaArray:X_MA : X_DE];
+    [mf convertToDeltaArray:Y_MA : Y_DE];
+    [mf convertToDeltaArray:Z_MA : Z_DE];
     
-    [self trimArray:X_DE];
-    [self trimArray:Y_DE];
-    [self trimArray:Z_DE];
+    [mf trimArray:X_DE];
+    [mf trimArray:Y_DE];
+    [mf trimArray:Z_DE];
     
     //**TEMP** Print all delta's & check amount of times passed 0
     int passed_x = 0;
@@ -395,34 +389,34 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
               (i<zlen) ? [Z_DE[i] doubleValue] : 0);
         
         /*if(i<xlen)
-         [self checkIfPassedZero:X_DE: i :&passed_x];
+         [mf checkIfPassedZero:X_DE: i :&passed_x];
          if(i<ylen)
-         [self checkIfPassedZero:Y_DE: i :&passed_y];
+         [mf checkIfPassedZero:Y_DE: i :&passed_y];
          if(i<zlen)
-         [self checkIfPassedZero:Z_DE: i :&passed_z];*/
+         [mf checkIfPassedZero:Z_DE: i :&passed_z];*/
     }
     //NSLog(@"passed x: %i, passed y: %i, passed z: %i", passed_x, passed_y, passed_z);
     
     //Make like a banana and split
-    [self splitIntoMultipleArrays:X_DE :X_array_container];
-    [self splitIntoMultipleArrays:Y_DE :Y_array_container];
-    [self splitIntoMultipleArrays:Z_DE :Z_array_container];
+    [mf splitIntoMultipleArrays:X_DE :X_array_container];
+    [mf splitIntoMultipleArrays:Y_DE :Y_array_container];
+    [mf splitIntoMultipleArrays:Z_DE :Z_array_container];
     
     //Remove bullshit values from split array
-    [self removeBadArrayValues:X_array_container];
-    [self removeBadArrayValues:Y_array_container];
-    [self removeBadArrayValues:Z_array_container];
+    [mf removeBadArrayValues:X_array_container];
+    [mf removeBadArrayValues:Y_array_container];
+    [mf removeBadArrayValues:Z_array_container];
     
     //Remove insignificant values from the now clean arrays
     
     for (NSMutableArray * p_a in X_array_container) {
-        [self trimArray:p_a];
+        [mf trimArray:p_a];
     }
     for (NSMutableArray * p_a in Y_array_container) {
-        [self trimArray:p_a];
+        [mf trimArray:p_a];
     }
     for (NSMutableArray * p_a in Z_array_container) {
-        [self trimArray:p_a];
+        [mf trimArray:p_a];
     }
     
     PFObject *storage = [PFObject objectWithClassName:@"Datadump"];
@@ -456,188 +450,12 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 }
 
 
--(void)removeBadArrayValues:(NSMutableArray*)source_array
-{
-    NSMutableArray * tmp = [[NSMutableArray alloc] init];
-    for (NSMutableArray* p_a in source_array)
-    {
-        if(p_a.count < 10)
-        {
-            [tmp addObject:p_a];
-        }
-    }
-    for (NSMutableArray* p_a in tmp)
-    {
-        [source_array removeObject:p_a];
-    }
-}
 
 
--(void)convertToMovingAverage: (NSMutableArray*)source_array:(NSMutableArray*)destination_array
-{
-    [destination_array removeAllObjects];
-    if(source_array.count >= 5)
-    {
-        for(int i = 4; i < source_array.count; i++)
-        {
-            double sum_storage =
-            [source_array[i] doubleValue] + [source_array[i-1] doubleValue] + [source_array[i-2] doubleValue]
-            + [source_array[i-3] doubleValue] + [source_array[i-4] doubleValue];
-            [destination_array addObject:[NSNumber numberWithDouble:sum_storage/5]];
-        }
-    }
-}
 
--(void)convertToDeltaArray: (NSMutableArray*)source_array:(NSMutableArray*)destination_array
-{
-    [destination_array removeAllObjects];
-    if(source_array.count >= 2)
-    {
-        for(int i = 1; i < source_array.count; i++)
-        {
-            [destination_array addObject:[NSNumber numberWithDouble:
-                                          [source_array[i] doubleValue]-[source_array[i-1] doubleValue]]];
-        }
-    }
-}
 
--(void)trimArray:(NSMutableArray*)toBeTrimmed
-{
-    [self trimStartFromArray:toBeTrimmed];
-    [self trimEndFromArray:toBeTrimmed];
-}
 
--(void)trimStartFromArray:(NSMutableArray*)toBeTrimmed
-{
-    bool found = false;
-    int index = 0;
-    while(found == false && index < toBeTrimmed.count)
-    {
-        if([toBeTrimmed[index] doubleValue] >= 0.05 ||
-           [toBeTrimmed[index] doubleValue] <= -0.05)
-        {
-            found = true;
-        }
-        else
-        {
-            index++;
-        }
-    }
-    if(index != 0 && found == true)
-    {
-        for(int i = index-1; i >= 0; i--)
-        {
-            [toBeTrimmed removeObjectAtIndex:i];
-        }
-    }
-}
 
--(void)trimEndFromArray:(NSMutableArray*)toBeTrimmed
-{
-    bool found = false;
-    int index = toBeTrimmed.count - 1;
-    while(found == false)
-    {
-        if([toBeTrimmed[index] doubleValue] >= 0.05 ||
-           [toBeTrimmed[index] doubleValue] <= -0.05)
-        {
-            found = true;
-        }
-        else
-        {
-            index--;
-        }
-        
-        if(index == -1)
-        {
-            found = true;
-        }
-    }
-    
-    if(index != -1 || index != (toBeTrimmed.count-1))
-    {
-        int amountOfValues = toBeTrimmed.count-1 - index;
-        for(int i = amountOfValues; i > 0; i--)
-        {
-            [toBeTrimmed removeObjectAtIndex:index+i];
-        }
-    }
-}
 
--(void)splitIntoMultipleArrays:(NSMutableArray*)source_array:(NSMutableArray*)destination_array
-{
-    int lastPassing = 0;
-    for(int i = 1; i < source_array.count; i++)
-    {
-        //only if passing 0 by a positive value
-        if([source_array[i] doubleValue] >= 0 && [source_array[i-1] doubleValue] <= 0 )
-        {
-            NSMutableArray * tmp = [[NSMutableArray alloc] init];
-            NSRange tmp_range = NSMakeRange(lastPassing, i-lastPassing);
-            [tmp addObjectsFromArray:[source_array subarrayWithRange:tmp_range]];
-            lastPassing = i;
-            [destination_array addObject:tmp] ;
-        }
-    }
-    if(source_array.count != 0)
-    {
-    NSMutableArray * tmp = [[NSMutableArray alloc] init];
-    NSRange tmp_range = NSMakeRange(lastPassing, source_array.count-lastPassing);
-    [tmp addObjectsFromArray:[source_array subarrayWithRange:tmp_range]];
-    [destination_array addObject:tmp] ;
-    }
-}
 
--(BOOL)arrayCompare:(NSMutableArray*)current_data:(NSMutableArray*)compare_stack
-{
-    bool found = true;
-    bool loop_break = false;
-    int container_i = 0;
-    while(loop_break == false && container_i < compare_stack.count)
-    {
-        int array_i = 0;
-        NSMutableArray * sub_array = compare_stack[container_i];
-        while(found == true && array_i < sub_array.count )
-        {
-            double current_double = [current_data[array_i] doubleValue];
-            double min_comp_double = [sub_array[array_i] doubleValue] - 0.10;
-            double max_comp_double = [sub_array [array_i] doubleValue] + 0.10;
-            
-            //check if outside boundries, if so, break out of while, no need to compare if 1 value isnt correct
-            if((current_double < min_comp_double) ||
-               (current_double > max_comp_double))
-               {
-                   found = false;
-               }
-               array_i++;
-        }
-        if(found == true)
-        {
-            loop_break = true;
-        }
-        else
-        {
-            found = true;
-            container_i++;
-        }
-    }
-    if(compare_stack.count == 0)
-    {
-        return true;
-    }
-    else
-    {
-        return loop_break;
-    }
-}
-
--(void)checkIfPassedZero:(NSMutableArray*)arrayToCheck :(int)index :(int*)toStoreIn
-{
-    if(([arrayToCheck[index] doubleValue] >= 0 && [arrayToCheck[index-1] doubleValue] <= 0) ||
-       ([arrayToCheck[index] doubleValue] <= 0 &&
-        [arrayToCheck[index-1] doubleValue] >= 0))
-    {
-        (*toStoreIn)++;
-    }
-}
 @end
