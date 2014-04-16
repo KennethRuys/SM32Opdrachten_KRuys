@@ -23,26 +23,37 @@
 		F589F96618DA579800DAEA89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F589F94518DA579700DAEA89 /* UIKit.framework */; };
 		F589F96E18DA579800DAEA89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F589F96C18DA579800DAEA89 /* InfoPlist.strings */; };
 		F589F97018DA579800DAEA89 /* ProgressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F589F96F18DA579800DAEA89 /* ProgressTests.m */; };
-		F589F97C18DA5EC400DAEA89 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F97A18DA5EC400DAEA89 /* Default.png */; };
-		F589F97D18DA5EC400DAEA89 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F97B18DA5EC400DAEA89 /* Default@2x.png */; };
-		F589F97F18DA600200DAEA89 /* Default@R4.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F97E18DA600200DAEA89 /* Default@R4.png */; };
-		F589F98718DA60D700DAEA89 /* Background@R4.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F98618DA60D700DAEA89 /* Background@R4.png */; };
-		F589F9CE18DA642300DAEA89 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C018DA642300DAEA89 /* AppIcon29x29.png */; };
-		F589F9CF18DA642300DAEA89 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C118DA642300DAEA89 /* AppIcon29x29@2x.png */; };
-		F589F9D018DA642300DAEA89 /* AppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C218DA642300DAEA89 /* AppIcon40x40.png */; };
-		F589F9D118DA642300DAEA89 /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C318DA642300DAEA89 /* AppIcon40x40@2x.png */; };
-		F589F9D218DA642300DAEA89 /* AppIcon50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C418DA642300DAEA89 /* AppIcon50x50.png */; };
-		F589F9D318DA642300DAEA89 /* AppIcon50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C518DA642300DAEA89 /* AppIcon50x50@2x.png */; };
-		F589F9D418DA642300DAEA89 /* AppIcon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C618DA642300DAEA89 /* AppIcon57x57.png */; };
-		F589F9D518DA642300DAEA89 /* AppIcon57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C718DA642300DAEA89 /* AppIcon57x57@2x.png */; };
-		F589F9D618DA642300DAEA89 /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C818DA642300DAEA89 /* AppIcon60x60.png */; };
-		F589F9D718DA642300DAEA89 /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9C918DA642300DAEA89 /* AppIcon60x60@2x.png */; };
-		F589F9D818DA642300DAEA89 /* AppIcon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9CA18DA642300DAEA89 /* AppIcon72x72.png */; };
-		F589F9D918DA642300DAEA89 /* AppIcon72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9CB18DA642300DAEA89 /* AppIcon72x72@2x.png */; };
-		F589F9DA18DA642300DAEA89 /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9CC18DA642300DAEA89 /* AppIcon76x76.png */; };
-		F589F9DB18DA642300DAEA89 /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F589F9CD18DA642300DAEA89 /* AppIcon76x76@2x.png */; };
 		F5BDA14E18E39603000C979C /* Workout_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDA14D18E39603000C979C /* Workout_TableViewController.m */; };
 		F5BDA15118E39F10000C979C /* DetailedWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDA15018E39F10000C979C /* DetailedWorkoutViewController.m */; };
+		F5CB0DC018FE25840003A968 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CB0DBF18FE25840003A968 /* Parse.framework */; };
+		F5CB0DC218FE25C40003A968 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CB0DC118FE25C40003A968 /* AudioToolbox.framework */; };
+		F5CB0DC418FE25CB0003A968 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CB0DC318FE25CB0003A968 /* CFNetwork.framework */; };
+		F5CB0DC618FE25D90003A968 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CB0DC518FE25D90003A968 /* CoreLocation.framework */; };
+		F5CB0DC818FE25E20003A968 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CB0DC718FE25E20003A968 /* libz.dylib */; };
+		F5CB0DCA18FE25E90003A968 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CB0DC918FE25E90003A968 /* MobileCoreServices.framework */; };
+		F5CB0DCC18FE25F00003A968 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CB0DCB18FE25F00003A968 /* QuartzCore.framework */; };
+		F5CB0DCE18FE25F60003A968 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CB0DCD18FE25F60003A968 /* Security.framework */; };
+		F5CB0DD018FE26000003A968 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CB0DCF18FE26000003A968 /* StoreKit.framework */; };
+		F5CB0DD218FE26130003A968 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CB0DD118FE26130003A968 /* SystemConfiguration.framework */; };
+		F5CB0DE418FE38EB0003A968 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DD418FE38EB0003A968 /* AppIcon29x29.png */; };
+		F5CB0DE518FE38EB0003A968 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DD518FE38EB0003A968 /* AppIcon29x29@2x.png */; };
+		F5CB0DE618FE38EB0003A968 /* AppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DD618FE38EB0003A968 /* AppIcon40x40.png */; };
+		F5CB0DE718FE38EB0003A968 /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DD718FE38EB0003A968 /* AppIcon40x40@2x.png */; };
+		F5CB0DE818FE38EB0003A968 /* AppIcon50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DD818FE38EB0003A968 /* AppIcon50x50.png */; };
+		F5CB0DE918FE38EB0003A968 /* AppIcon50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DD918FE38EB0003A968 /* AppIcon50x50@2x.png */; };
+		F5CB0DEA18FE38EB0003A968 /* AppIcon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DDA18FE38EB0003A968 /* AppIcon57x57.png */; };
+		F5CB0DEB18FE38EB0003A968 /* AppIcon57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DDB18FE38EB0003A968 /* AppIcon57x57@2x.png */; };
+		F5CB0DEC18FE38EB0003A968 /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DDC18FE38EB0003A968 /* AppIcon60x60.png */; };
+		F5CB0DED18FE38EB0003A968 /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DDD18FE38EB0003A968 /* AppIcon60x60@2x.png */; };
+		F5CB0DEE18FE38EB0003A968 /* AppIcon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DDE18FE38EB0003A968 /* AppIcon72x72.png */; };
+		F5CB0DEF18FE38EB0003A968 /* AppIcon72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DDF18FE38EB0003A968 /* AppIcon72x72@2x.png */; };
+		F5CB0DF018FE38EB0003A968 /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DE018FE38EB0003A968 /* AppIcon76x76.png */; };
+		F5CB0DF118FE38EB0003A968 /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DE118FE38EB0003A968 /* AppIcon76x76@2x.png */; };
+		F5CB0DF218FE38EB0003A968 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DE218FE38EB0003A968 /* iTunesArtwork.png */; };
+		F5CB0DF318FE38EB0003A968 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DE318FE38EB0003A968 /* iTunesArtwork@2x.png */; };
+		F5CB0DF618FE3C9C0003A968 /* LaunchImage-ipad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DF518FE3C9C0003A968 /* LaunchImage-ipad2x.png */; };
+		F5CB0DF818FE3CA10003A968 /* LaunchImage-ipad1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DF718FE3CA10003A968 /* LaunchImage-ipad1x.png */; };
+		F5CB0DFA18FE3D1B0003A968 /* Background-ipad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CB0DF918FE3D1B0003A968 /* Background-ipad2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,28 +90,39 @@
 		F589F96B18DA579800DAEA89 /* ProgressTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProgressTests-Info.plist"; sourceTree = "<group>"; };
 		F589F96D18DA579800DAEA89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F589F96F18DA579800DAEA89 /* ProgressTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressTests.m; sourceTree = "<group>"; };
-		F589F97A18DA5EC400DAEA89 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		F589F97B18DA5EC400DAEA89 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		F589F97E18DA600200DAEA89 /* Default@R4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@R4.png"; sourceTree = "<group>"; };
-		F589F98618DA60D700DAEA89 /* Background@R4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@R4.png"; sourceTree = "<group>"; };
-		F589F9C018DA642300DAEA89 /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
-		F589F9C118DA642300DAEA89 /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
-		F589F9C218DA642300DAEA89 /* AppIcon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon40x40.png; sourceTree = "<group>"; };
-		F589F9C318DA642300DAEA89 /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@2x.png"; sourceTree = "<group>"; };
-		F589F9C418DA642300DAEA89 /* AppIcon50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon50x50.png; sourceTree = "<group>"; };
-		F589F9C518DA642300DAEA89 /* AppIcon50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon50x50@2x.png"; sourceTree = "<group>"; };
-		F589F9C618DA642300DAEA89 /* AppIcon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon57x57.png; sourceTree = "<group>"; };
-		F589F9C718DA642300DAEA89 /* AppIcon57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon57x57@2x.png"; sourceTree = "<group>"; };
-		F589F9C818DA642300DAEA89 /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon60x60.png; sourceTree = "<group>"; };
-		F589F9C918DA642300DAEA89 /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
-		F589F9CA18DA642300DAEA89 /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon72x72.png; sourceTree = "<group>"; };
-		F589F9CB18DA642300DAEA89 /* AppIcon72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon72x72@2x.png"; sourceTree = "<group>"; };
-		F589F9CC18DA642300DAEA89 /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon76x76.png; sourceTree = "<group>"; };
-		F589F9CD18DA642300DAEA89 /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76@2x.png"; sourceTree = "<group>"; };
 		F5BDA14C18E39603000C979C /* Workout_TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Workout_TableViewController.h; path = ../Workout_TableViewController.h; sourceTree = "<group>"; };
 		F5BDA14D18E39603000C979C /* Workout_TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Workout_TableViewController.m; path = ../Workout_TableViewController.m; sourceTree = "<group>"; };
 		F5BDA14F18E39F10000C979C /* DetailedWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedWorkoutViewController.h; sourceTree = "<group>"; };
 		F5BDA15018E39F10000C979C /* DetailedWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedWorkoutViewController.m; sourceTree = "<group>"; };
+		F5CB0DBF18FE25840003A968 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F5CB0DC118FE25C40003A968 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F5CB0DC318FE25CB0003A968 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F5CB0DC518FE25D90003A968 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F5CB0DC718FE25E20003A968 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F5CB0DC918FE25E90003A968 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F5CB0DCB18FE25F00003A968 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F5CB0DCD18FE25F60003A968 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F5CB0DCF18FE26000003A968 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F5CB0DD118FE26130003A968 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F5CB0DD418FE38EB0003A968 /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
+		F5CB0DD518FE38EB0003A968 /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
+		F5CB0DD618FE38EB0003A968 /* AppIcon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon40x40.png; sourceTree = "<group>"; };
+		F5CB0DD718FE38EB0003A968 /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@2x.png"; sourceTree = "<group>"; };
+		F5CB0DD818FE38EB0003A968 /* AppIcon50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon50x50.png; sourceTree = "<group>"; };
+		F5CB0DD918FE38EB0003A968 /* AppIcon50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon50x50@2x.png"; sourceTree = "<group>"; };
+		F5CB0DDA18FE38EB0003A968 /* AppIcon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon57x57.png; sourceTree = "<group>"; };
+		F5CB0DDB18FE38EB0003A968 /* AppIcon57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon57x57@2x.png"; sourceTree = "<group>"; };
+		F5CB0DDC18FE38EB0003A968 /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon60x60.png; sourceTree = "<group>"; };
+		F5CB0DDD18FE38EB0003A968 /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		F5CB0DDE18FE38EB0003A968 /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon72x72.png; sourceTree = "<group>"; };
+		F5CB0DDF18FE38EB0003A968 /* AppIcon72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon72x72@2x.png"; sourceTree = "<group>"; };
+		F5CB0DE018FE38EB0003A968 /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon76x76.png; sourceTree = "<group>"; };
+		F5CB0DE118FE38EB0003A968 /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76@2x.png"; sourceTree = "<group>"; };
+		F5CB0DE218FE38EB0003A968 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		F5CB0DE318FE38EB0003A968 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		F5CB0DF518FE3C9C0003A968 /* LaunchImage-ipad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-ipad2x.png"; sourceTree = "<group>"; };
+		F5CB0DF718FE3CA10003A968 /* LaunchImage-ipad1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-ipad1x.png"; sourceTree = "<group>"; };
+		F5CB0DF918FE3D1B0003A968 /* Background-ipad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-ipad2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +130,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5CB0DD218FE26130003A968 /* SystemConfiguration.framework in Frameworks */,
+				F5CB0DD018FE26000003A968 /* StoreKit.framework in Frameworks */,
+				F5CB0DCE18FE25F60003A968 /* Security.framework in Frameworks */,
+				F5CB0DCC18FE25F00003A968 /* QuartzCore.framework in Frameworks */,
+				F5CB0DCA18FE25E90003A968 /* MobileCoreServices.framework in Frameworks */,
+				F5CB0DC818FE25E20003A968 /* libz.dylib in Frameworks */,
+				F5CB0DC618FE25D90003A968 /* CoreLocation.framework in Frameworks */,
 				F589F94418DA579700DAEA89 /* CoreGraphics.framework in Frameworks */,
+				F5CB0DC418FE25CB0003A968 /* CFNetwork.framework in Frameworks */,
+				F5CB0DC218FE25C40003A968 /* AudioToolbox.framework in Frameworks */,
 				F589F94618DA579700DAEA89 /* UIKit.framework in Frameworks */,
+				F5CB0DC018FE25840003A968 /* Parse.framework in Frameworks */,
 				F589F94218DA579700DAEA89 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,11 +186,7 @@
 		F589F93518DA579700DAEA89 = {
 			isa = PBXGroup;
 			children = (
-				F589F9BF18DA642300DAEA89 /* LaunchIcons */,
-				F589F98618DA60D700DAEA89 /* Background@R4.png */,
-				F589F97E18DA600200DAEA89 /* Default@R4.png */,
-				F589F97A18DA5EC400DAEA89 /* Default.png */,
-				F589F97B18DA5EC400DAEA89 /* Default@2x.png */,
+				F5CB0DBF18FE25840003A968 /* Parse.framework */,
 				F589F94718DA579700DAEA89 /* Progress */,
 				F589F96918DA579800DAEA89 /* ProgressTests */,
 				F589F94018DA579700DAEA89 /* Frameworks */,
@@ -178,6 +206,15 @@
 		F589F94018DA579700DAEA89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5CB0DD118FE26130003A968 /* SystemConfiguration.framework */,
+				F5CB0DCF18FE26000003A968 /* StoreKit.framework */,
+				F5CB0DCD18FE25F60003A968 /* Security.framework */,
+				F5CB0DCB18FE25F00003A968 /* QuartzCore.framework */,
+				F5CB0DC918FE25E90003A968 /* MobileCoreServices.framework */,
+				F5CB0DC718FE25E20003A968 /* libz.dylib */,
+				F5CB0DC518FE25D90003A968 /* CoreLocation.framework */,
+				F5CB0DC318FE25CB0003A968 /* CFNetwork.framework */,
+				F5CB0DC118FE25C40003A968 /* AudioToolbox.framework */,
 				F589F94118DA579700DAEA89 /* Foundation.framework */,
 				F589F94318DA579700DAEA89 /* CoreGraphics.framework */,
 				F589F94518DA579700DAEA89 /* UIKit.framework */,
@@ -189,6 +226,8 @@
 		F589F94718DA579700DAEA89 /* Progress */ = {
 			isa = PBXGroup;
 			children = (
+				F5CB0DF418FE3C870003A968 /* Launch Icon */,
+				F5CB0DD318FE38EB0003A968 /* App Icon [Rounded] */,
 				F56547E818ED55A200F2D07B /* Logic Classes */,
 				F56547E718ED558100F2D07B /* UI Classes */,
 				F589F97918DA581800DAEA89 /* iPad */,
@@ -237,26 +276,37 @@
 			name = iPad;
 			sourceTree = "<group>";
 		};
-		F589F9BF18DA642300DAEA89 /* LaunchIcons */ = {
+		F5CB0DD318FE38EB0003A968 /* App Icon [Rounded] */ = {
 			isa = PBXGroup;
 			children = (
-				F589F9C018DA642300DAEA89 /* AppIcon29x29.png */,
-				F589F9C118DA642300DAEA89 /* AppIcon29x29@2x.png */,
-				F589F9C218DA642300DAEA89 /* AppIcon40x40.png */,
-				F589F9C318DA642300DAEA89 /* AppIcon40x40@2x.png */,
-				F589F9C418DA642300DAEA89 /* AppIcon50x50.png */,
-				F589F9C518DA642300DAEA89 /* AppIcon50x50@2x.png */,
-				F589F9C618DA642300DAEA89 /* AppIcon57x57.png */,
-				F589F9C718DA642300DAEA89 /* AppIcon57x57@2x.png */,
-				F589F9C818DA642300DAEA89 /* AppIcon60x60.png */,
-				F589F9C918DA642300DAEA89 /* AppIcon60x60@2x.png */,
-				F589F9CA18DA642300DAEA89 /* AppIcon72x72.png */,
-				F589F9CB18DA642300DAEA89 /* AppIcon72x72@2x.png */,
-				F589F9CC18DA642300DAEA89 /* AppIcon76x76.png */,
-				F589F9CD18DA642300DAEA89 /* AppIcon76x76@2x.png */,
+				F5CB0DD418FE38EB0003A968 /* AppIcon29x29.png */,
+				F5CB0DD518FE38EB0003A968 /* AppIcon29x29@2x.png */,
+				F5CB0DD618FE38EB0003A968 /* AppIcon40x40.png */,
+				F5CB0DD718FE38EB0003A968 /* AppIcon40x40@2x.png */,
+				F5CB0DD818FE38EB0003A968 /* AppIcon50x50.png */,
+				F5CB0DD918FE38EB0003A968 /* AppIcon50x50@2x.png */,
+				F5CB0DDA18FE38EB0003A968 /* AppIcon57x57.png */,
+				F5CB0DDB18FE38EB0003A968 /* AppIcon57x57@2x.png */,
+				F5CB0DDC18FE38EB0003A968 /* AppIcon60x60.png */,
+				F5CB0DDD18FE38EB0003A968 /* AppIcon60x60@2x.png */,
+				F5CB0DDE18FE38EB0003A968 /* AppIcon72x72.png */,
+				F5CB0DDF18FE38EB0003A968 /* AppIcon72x72@2x.png */,
+				F5CB0DE018FE38EB0003A968 /* AppIcon76x76.png */,
+				F5CB0DE118FE38EB0003A968 /* AppIcon76x76@2x.png */,
+				F5CB0DE218FE38EB0003A968 /* iTunesArtwork.png */,
+				F5CB0DE318FE38EB0003A968 /* iTunesArtwork@2x.png */,
 			);
-			name = LaunchIcons;
-			path = ProgressApplicationIcons/LaunchIcons;
+			path = "App Icon [Rounded]";
+			sourceTree = "<group>";
+		};
+		F5CB0DF418FE3C870003A968 /* Launch Icon */ = {
+			isa = PBXGroup;
+			children = (
+				F5CB0DF918FE3D1B0003A968 /* Background-ipad2x.png */,
+				F5CB0DF718FE3CA10003A968 /* LaunchImage-ipad1x.png */,
+				F5CB0DF518FE3C9C0003A968 /* LaunchImage-ipad2x.png */,
+			);
+			name = "Launch Icon";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,27 +388,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F589F9D518DA642300DAEA89 /* AppIcon57x57@2x.png in Resources */,
 				F589F95D18DA579700DAEA89 /* Images.xcassets in Resources */,
-				F589F9D118DA642300DAEA89 /* AppIcon40x40@2x.png in Resources */,
-				F589F9D918DA642300DAEA89 /* AppIcon72x72@2x.png in Resources */,
+				F5CB0DEC18FE38EB0003A968 /* AppIcon60x60.png in Resources */,
+				F5CB0DE618FE38EB0003A968 /* AppIcon40x40.png in Resources */,
+				F5CB0DE718FE38EB0003A968 /* AppIcon40x40@2x.png in Resources */,
+				F5CB0DE518FE38EB0003A968 /* AppIcon29x29@2x.png in Resources */,
 				F589F94C18DA579700DAEA89 /* InfoPlist.strings in Resources */,
-				F589F9D018DA642300DAEA89 /* AppIcon40x40.png in Resources */,
-				F589F9D218DA642300DAEA89 /* AppIcon50x50.png in Resources */,
-				F589F9CF18DA642300DAEA89 /* AppIcon29x29@2x.png in Resources */,
-				F589F98718DA60D700DAEA89 /* Background@R4.png in Resources */,
-				F589F9D718DA642300DAEA89 /* AppIcon60x60@2x.png in Resources */,
-				F589F97D18DA5EC400DAEA89 /* Default@2x.png in Resources */,
-				F589F9DA18DA642300DAEA89 /* AppIcon76x76.png in Resources */,
-				F589F9D818DA642300DAEA89 /* AppIcon72x72.png in Resources */,
+				F5CB0DF218FE38EB0003A968 /* iTunesArtwork.png in Resources */,
+				F5CB0DF818FE3CA10003A968 /* LaunchImage-ipad1x.png in Resources */,
+				F5CB0DE918FE38EB0003A968 /* AppIcon50x50@2x.png in Resources */,
 				F589F95518DA579700DAEA89 /* Main.storyboard in Resources */,
-				F589F9D318DA642300DAEA89 /* AppIcon50x50@2x.png in Resources */,
-				F589F9D418DA642300DAEA89 /* AppIcon57x57.png in Resources */,
-				F589F9CE18DA642300DAEA89 /* AppIcon29x29.png in Resources */,
-				F589F9DB18DA642300DAEA89 /* AppIcon76x76@2x.png in Resources */,
-				F589F97F18DA600200DAEA89 /* Default@R4.png in Resources */,
-				F589F9D618DA642300DAEA89 /* AppIcon60x60.png in Resources */,
-				F589F97C18DA5EC400DAEA89 /* Default.png in Resources */,
+				F5CB0DEA18FE38EB0003A968 /* AppIcon57x57.png in Resources */,
+				F5CB0DE418FE38EB0003A968 /* AppIcon29x29.png in Resources */,
+				F5CB0DED18FE38EB0003A968 /* AppIcon60x60@2x.png in Resources */,
+				F5CB0DF618FE3C9C0003A968 /* LaunchImage-ipad2x.png in Resources */,
+				F5CB0DEB18FE38EB0003A968 /* AppIcon57x57@2x.png in Resources */,
+				F5CB0DFA18FE3D1B0003A968 /* Background-ipad2x.png in Resources */,
+				F5CB0DF318FE38EB0003A968 /* iTunesArtwork@2x.png in Resources */,
+				F5CB0DE818FE38EB0003A968 /* AppIcon50x50.png in Resources */,
+				F5CB0DEE18FE38EB0003A968 /* AppIcon72x72.png in Resources */,
+				F5CB0DEF18FE38EB0003A968 /* AppIcon72x72@2x.png in Resources */,
+				F5CB0DF118FE38EB0003A968 /* AppIcon76x76@2x.png in Resources */,
+				F5CB0DF018FE38EB0003A968 /* AppIcon76x76.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +561,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Progress/Progress-Prefix.pch";
 				INFOPLIST_FILE = "Progress/Progress-Info.plist";
@@ -528,6 +583,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Progress/Progress-Prefix.pch";
 				INFOPLIST_FILE = "Progress/Progress-Info.plist";

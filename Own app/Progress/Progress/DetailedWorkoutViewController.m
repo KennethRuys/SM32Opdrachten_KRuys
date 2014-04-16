@@ -65,6 +65,52 @@
     
     self.motionManager = [[CMMotionManager alloc] init];
     
+    PFQuery *query = [PFQuery queryWithClassName:@"Datadump"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+       if(!error)
+       {
+           for (PFObject *object in objects) {
+               NSLog(@"%@", object.objectId);
+               X_array_container = [object valueForKey:@"myXcmp" ];
+               Y_array_container = [object valueForKey:@"myYcmp" ];
+               Z_array_container = [object valueForKey:@"myZcmp" ];
+           }
+       }
+        else
+        {
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    PFQuery *query_bas = [PFQuery queryWithClassName:@"Baseline"];
+    [query_bas findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if(!error)
+        {
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object.objectId);
+                X_baseline_array = [object valueForKey:@"myXbase" ];
+                Y_baseline_array = [object valueForKey:@"myYbase" ];
+                Z_baseline_array = [object valueForKey:@"myZbase" ];
+            }
+        }
+        else
+        {
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    
+    X_baseline = [self computeAverage:X_baseline_array];
+    Y_baseline = [self computeAverage:Y_baseline_array];
+    Z_baseline = [self computeAverage:Z_baseline_array];
+}
+
+-(double)computeAverage:(NSMutableArray*)source_array
+{
+    double storage = 0;
+    for(int i = 0; i < source_array.count; i++)
+    {
+        storage += [source_array[i] doubleValue];
+    }
+    return storage/source_array.count;
 }
 
 -(void)baseline_outputAccelertionData:(CMAcceleration)acceleration
@@ -112,6 +158,12 @@
         Z_baseline = tmpz/Z_baseline_array.count;
         
         NSLog(@"X_bas: %.2fg, Y_bas: %.2fg, Z_bas: %2.fg", X_baseline, Y_baseline, Z_baseline);
+        
+        PFObject *storage = [PFObject objectWithClassName:@"Baseline"];
+        storage[@"myXbase"] = [NSNumber numberWithDouble:X_baseline];
+        storage[@"myYbase"] = [NSNumber numberWithDouble:Y_baseline];
+        storage[@"myZbase"] = [NSNumber numberWithDouble:Z_baseline];
+        [storage saveEventually];
         
         [X_baseline_array removeAllObjects];
         [Y_baseline_array removeAllObjects];
@@ -372,6 +424,12 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     for (NSMutableArray * p_a in Z_array_container) {
         [self trimArray:p_a];
     }
+    
+    PFObject *storage = [PFObject objectWithClassName:@"Datadump"];
+    storage[@"myXcmp"] = X_array_container;
+    storage[@"myYcmp"] = Y_array_container;
+    storage[@"myZcmp"] = Z_array_container;
+    [storage saveEventually];
 }
 
 - (IBAction)start_check:(id)sender {

@@ -54,11 +54,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "280"
-            endingLineNumber = "280"
+            startingLineNumber = "332"
+            endingLineNumber = "332"
             landmarkName = "-firstRecordingStart:"
             landmarkType = "5">
          </BreakpointContent>
@@ -70,11 +70,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "277"
-            endingLineNumber = "277"
+            startingLineNumber = "329"
+            endingLineNumber = "329"
             landmarkName = "-firstRecordingStart:"
             landmarkType = "5">
          </BreakpointContent>
@@ -86,11 +86,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "266"
-            endingLineNumber = "266"
+            startingLineNumber = "318"
+            endingLineNumber = "318"
             landmarkName = "-baselineMeasurement:"
             landmarkType = "5">
          </BreakpointContent>
@@ -102,11 +102,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "577"
-            endingLineNumber = "577"
+            startingLineNumber = "635"
+            endingLineNumber = "635"
             landmarkName = "-checkIfPassedZero:::"
             landmarkType = "5">
          </BreakpointContent>
@@ -118,11 +118,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "584"
-            endingLineNumber = "584"
+            startingLineNumber = "642"
+            endingLineNumber = "642"
             landmarkName = "-checkIfPassedZero:::"
             landmarkType = "5">
          </BreakpointContent>
@@ -134,11 +134,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "582"
-            endingLineNumber = "582"
+            startingLineNumber = "640"
+            endingLineNumber = "640"
             landmarkName = "-checkIfPassedZero:::"
             landmarkType = "5">
          </BreakpointContent>
@@ -150,11 +150,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "429"
-            endingLineNumber = "429"
+            startingLineNumber = "487"
+            endingLineNumber = "487"
             landmarkName = "-convertToMovingAverage::"
             landmarkType = "5">
          </BreakpointContent>
@@ -166,11 +166,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "479"
-            endingLineNumber = "479"
+            startingLineNumber = "537"
+            endingLineNumber = "537"
             landmarkName = "-trimEndFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -182,11 +182,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "486"
-            endingLineNumber = "486"
+            startingLineNumber = "544"
+            endingLineNumber = "544"
             landmarkName = "-trimEndFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -198,11 +198,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "483"
-            endingLineNumber = "483"
+            startingLineNumber = "541"
+            endingLineNumber = "541"
             landmarkName = "-trimEndFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -214,11 +214,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "487"
-            endingLineNumber = "487"
+            startingLineNumber = "545"
+            endingLineNumber = "545"
             landmarkName = "-trimEndFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -230,11 +230,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "456"
-            endingLineNumber = "456"
+            startingLineNumber = "514"
+            endingLineNumber = "514"
             landmarkName = "-trimStartFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -246,11 +246,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "458"
-            endingLineNumber = "458"
+            startingLineNumber = "516"
+            endingLineNumber = "516"
             landmarkName = "-trimStartFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -262,11 +262,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "455"
-            endingLineNumber = "455"
+            startingLineNumber = "513"
+            endingLineNumber = "513"
             landmarkName = "-trimStartFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -278,11 +278,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "495"
-            endingLineNumber = "495"
+            startingLineNumber = "553"
+            endingLineNumber = "553"
             landmarkName = "-trimEndFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -294,11 +294,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "484"
-            endingLineNumber = "484"
+            startingLineNumber = "542"
+            endingLineNumber = "542"
             landmarkName = "-trimEndFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -310,11 +310,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "470"
-            endingLineNumber = "470"
+            startingLineNumber = "528"
+            endingLineNumber = "528"
             landmarkName = "-trimStartFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -326,11 +326,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "468"
-            endingLineNumber = "468"
+            startingLineNumber = "526"
+            endingLineNumber = "526"
             landmarkName = "-trimStartFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -342,11 +342,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "461"
-            endingLineNumber = "461"
+            startingLineNumber = "519"
+            endingLineNumber = "519"
             landmarkName = "-trimStartFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -358,11 +358,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "504"
-            endingLineNumber = "504"
+            startingLineNumber = "562"
+            endingLineNumber = "562"
             landmarkName = "-trimEndFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -374,11 +374,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "472"
-            endingLineNumber = "472"
+            startingLineNumber = "530"
+            endingLineNumber = "530"
             landmarkName = "-trimStartFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -390,11 +390,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "505"
-            endingLineNumber = "505"
+            startingLineNumber = "563"
+            endingLineNumber = "563"
             landmarkName = "-trimEndFromArray:"
             landmarkType = "5">
          </BreakpointContent>
@@ -406,11 +406,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "335"
-            endingLineNumber = "335"
+            startingLineNumber = "387"
+            endingLineNumber = "387"
             landmarkName = "-firstRecordingStop:"
             landmarkType = "5">
             <Locations>
@@ -452,11 +452,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "333"
-            endingLineNumber = "333"
+            startingLineNumber = "385"
+            endingLineNumber = "385"
             landmarkName = "-firstRecordingStop:"
             landmarkType = "5">
          </BreakpointContent>
@@ -468,11 +468,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "332"
-            endingLineNumber = "332"
+            startingLineNumber = "384"
+            endingLineNumber = "384"
             landmarkName = "-firstRecordingStop:"
             landmarkType = "5">
          </BreakpointContent>
@@ -484,11 +484,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "334"
-            endingLineNumber = "334"
+            startingLineNumber = "386"
+            endingLineNumber = "386"
             landmarkName = "-firstRecordingStop:"
             landmarkType = "5">
          </BreakpointContent>
@@ -500,11 +500,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "519"
-            endingLineNumber = "519"
+            startingLineNumber = "577"
+            endingLineNumber = "577"
             landmarkName = "-splitIntoMultipleArrays::"
             landmarkType = "5">
          </BreakpointContent>
@@ -516,11 +516,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "521"
-            endingLineNumber = "521"
+            startingLineNumber = "579"
+            endingLineNumber = "579"
             landmarkName = "-splitIntoMultipleArrays::"
             landmarkType = "5">
          </BreakpointContent>
@@ -532,11 +532,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "375"
-            endingLineNumber = "375"
+            startingLineNumber = "433"
+            endingLineNumber = "433"
             landmarkName = "-firstRecordingStop:"
             landmarkType = "5">
          </BreakpointContent>
@@ -548,11 +548,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "369"
-            endingLineNumber = "369"
+            startingLineNumber = "421"
+            endingLineNumber = "421"
             landmarkName = "-firstRecordingStop:"
             landmarkType = "5">
          </BreakpointContent>
@@ -564,11 +564,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "372"
-            endingLineNumber = "372"
+            startingLineNumber = "424"
+            endingLineNumber = "424"
             landmarkName = "-firstRecordingStop:"
             landmarkType = "5">
          </BreakpointContent>
@@ -580,11 +580,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
             landmarkName = "-start_outputAccelertionData:"
             landmarkType = "5">
          </BreakpointContent>
@@ -596,11 +596,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "421"
-            endingLineNumber = "421"
+            startingLineNumber = "479"
+            endingLineNumber = "479"
             landmarkName = "-convertToMovingAverage::"
             landmarkType = "5">
          </BreakpointContent>
@@ -612,12 +612,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Progress/DetailedWorkoutViewController.m"
-            timestampString = "419306191.293023"
+            timestampString = "419313067.345702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "420"
-            endingLineNumber = "420"
+            startingLineNumber = "478"
+            endingLineNumber = "478"
             landmarkName = "-convertToMovingAverage::"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Progress/DetailedWorkoutViewController.m"
+            timestampString = "419311853.584828"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

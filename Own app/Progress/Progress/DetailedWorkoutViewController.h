@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreMotion/CoreMotion.h>
+#import <Parse/Parse.h>
 
 
 NSMutableArray *X_baseline_array;
