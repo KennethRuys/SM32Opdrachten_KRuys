@@ -10,6 +10,7 @@
 
 @interface Exercise : NSObject
 
+-(id) init;
 
 
 @end

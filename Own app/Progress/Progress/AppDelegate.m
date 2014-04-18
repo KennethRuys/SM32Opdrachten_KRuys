@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "Exercise.h"
 
 @implementation AppDelegate
 
@@ -17,7 +18,18 @@
     [Parse setApplicationId:@"4U8ODPQ6vTMsyIVuIgVAnZSRTJYVyPfhO0Le9hKD"
                   clientKey:@"HWsLyvrb2KiYnjCbgE2nvb8I8skiwkBvc8i91pUz"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    _exerciseList = [[NSMutableArray alloc] init];
     return YES;
+}
+
+- (void)addExerciseListItem : (Exercise*) exer
+{
+    [_exerciseList addObject:exer];
+}
+
+-(NSMutableArray*)getExerciseList
+{
+    return _exerciseList;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

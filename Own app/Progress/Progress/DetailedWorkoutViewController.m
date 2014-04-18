@@ -7,6 +7,7 @@
 //
 
 #import "DetailedWorkoutViewController.h"
+#import "AppDelegate.h"
 #import <Foundation/Foundation.h>
 
 @interface DetailedWorkoutViewController ()
@@ -21,6 +22,7 @@
 @synthesize xlabel;
 @synthesize ylabel;
 @synthesize zlabel;
+@synthesize lbl_amountofreps;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -66,6 +68,8 @@
     [self setContentsList:array];
     
     self.motionManager = [[CMMotionManager alloc] init];
+    
+    lbl_amountofreps.text = [NSString stringWithFormat:@"%d", amountOfReps];
     
     PFQuery *query = [PFQuery queryWithClassName:@"Datadump"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -232,6 +236,8 @@
         amountOfTimesDone++;
         previousValue = true;
         skipTill = 0;
+        amountOfReps++;
+            lbl_amountofreps.text = [NSString stringWithFormat:@"%d", amountOfReps];
     }
     else if(previousValue)
     {
@@ -308,6 +314,13 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
  */
 
 - (IBAction)baselineMeasurement:(id)sender {
+    
+    /*AppDelegate * centralDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [centralDelegate addExerciseListItem:[[Exercise alloc]init]];
+    NSMutableArray * list = [centralDelegate getExerciseList];
+    [list addObject:[[Exercise alloc]init]];
+    [centralDelegate addExerciseListItem:[[Exercise alloc]init]];*/
+    
     self.motionManager.accelerometerUpdateInterval = .1;
     [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMAccelerometerData *accelerometerData, NSError * error)
      {
@@ -417,6 +430,12 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     }
     for (NSMutableArray * p_a in Z_array_container) {
         [mf trimArray:p_a];
+    }
+    
+    if(X_array_container.count != 0)
+    {
+        amountOfReps += X_array_container.count;
+            lbl_amountofreps.text = [NSString stringWithFormat:@"%d", amountOfReps];
     }
     
     PFObject *storage = [PFObject objectWithClassName:@"Datadump"];

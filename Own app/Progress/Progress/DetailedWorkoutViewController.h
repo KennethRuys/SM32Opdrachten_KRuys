@@ -45,6 +45,8 @@ int skipTill = 0;
 
 Math_functions *mf;
 
+int amountOfReps = 0;
+
 
 
 @interface DetailedWorkoutViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -61,5 +63,6 @@ Math_functions *mf;
 
 - (IBAction)start_check:(id)sender;
 - (IBAction)stop_check:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *lbl_amountofreps;
 
 @end
